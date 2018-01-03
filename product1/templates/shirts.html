@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D & G BRANDS</title>
+
+</head>
+<body>
+{%  for obj in objs %}
+        {{ obj.name }}
+        <img src="/{{ obj.pic.name }}">
+    {% endfor %}
+</body>
+</html>

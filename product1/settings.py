@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'n)s5m*h9(rv%1k#vfq!9s77=ss=$m5ehi7y3x@l48m94=qvg#6'
-
+PROJECT_PATH = os.path.dirname(__file__)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'product1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['product1/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,8 +70,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'product1.wsgi.application'
-
-
+STATIC_URL = '/static/'
+SETTINGS_DIR = os.path.dirname(__file__)
+STATIC_ROOT = os.path.join(SETTINGS_DIR, '/static/')
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
@@ -100,4 +101,3 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = '/static/'
