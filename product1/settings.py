@@ -25,7 +25,7 @@ PROJECT_PATH = os.path.dirname(__file__)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pujariganesh55.pythonanywhere.com',]
 
 
 # Application definition
