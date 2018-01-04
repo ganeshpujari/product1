@@ -67,7 +67,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Product grid -->
 
   <div class="w3-row w3-grayscale">
-      {% for obj in objs %}
+      {% for obj in jeans %}
         <div class="w3-col l3 s6">
               <div class="w3-container">
                 <img src="/{{ obj.pic.name}}" style="width:100%">
@@ -116,7 +116,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Product grid -->
 
   <div class="w3-row w3-grayscale">
-      {% for obj in objs %}
+      {% for obj in shirts %}
         <div class="w3-col l3 s6">
               <div class="w3-container">
                 <img src="/{{ obj.pic.name}}" style="width:100%">
@@ -165,7 +165,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Product grid -->
 
   <div class="w3-row w3-grayscale">
-      {% for obj in objs %}
+      {% for obj in jackets %}
         <div class="w3-col l3 s6">
               <div class="w3-container">
                 <img src="/{{ obj.pic.name}}" style="width:100%">
@@ -214,7 +214,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Product grid -->
 
   <div class="w3-row w3-grayscale">
-      {% for obj in objs %}
+      {% for obj in gymwear %}
         <div class="w3-col l3 s6">
               <div class="w3-container">
                 <img src="/{{ obj.pic.name}}" style="width:100%">
@@ -263,7 +263,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Product grid -->
 
   <div class="w3-row w3-grayscale">
-      {% for obj in objs %}
+      {% for obj in watches %}
         <div class="w3-col l3 s6">
               <div class="w3-container">
                 <img src="/{{ obj.pic.name}}" style="width:100%">
@@ -312,7 +312,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Product grid -->
 
   <div class="w3-row w3-grayscale">
-      {% for obj in objs %}
+      {% for obj in sunglasses %}
         <div class="w3-col l3 s6">
               <div class="w3-container">
                 <img src="/{{ obj.pic.name}}" style="width:100%">
@@ -357,7 +357,6 @@ function show_hide_main_content(id) {
     document.getElementById('gym').style.display='none';
     document.getElementById('wat').style.display='none';
     document.getElementById('sun').style.display='none';
-    alert(id);
     document.getElementById(id).style.display='block';
 
 }
