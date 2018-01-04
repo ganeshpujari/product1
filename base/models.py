@@ -13,3 +13,9 @@ class Address(models.Model):
 
 admin.site.register(Address)
 
+
+class Shirts(models.Model):
+    name=models.CharField(max_length=250,null=True,blank=True)
+    pic=models.ImageField(upload_to='pics',null=True,blank=True)
+
+admin.site.register(Shirts)
