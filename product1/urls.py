@@ -11,7 +11,7 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/shirts/$', shirts),
-    url(r'^pics/(?P<path>.*)$', django.views.static.serve,{'document_root': settings.BASE_DIR+'/static/pics'}),
+    url(r'^pics/(?P<path>.*)$',django.views.static.serve,{'document_root': settings.BASE_DIR+'/static/pics'}),
     # url(r'^pics/(?P<path>.*)$', django.views.static.serve,{'document_root': '/home/ganesh/rikoouu/product1/static/pics'}),
 ]
 # /home/ganesh/rikoouu/product1/static/pics/Firefox_wallpaper.png
