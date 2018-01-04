@@ -20,12 +20,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h3 class="w3-wide" color"red"><b>D&G Brands</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#"  onclick="show_hide_main_content('shirts')" class="w3-bar-item w3-button">Shirts</a>
-    <a href="#" onclick="show_hide_main_content('jenas')" class="w3-bar-item w3-button">Jeans</a>
-    <a href="#" onclick="show_hide_main_content('jacket')" class="w3-bar-item w3-button">Jackets</a>
-    <a href="#" onclick="show_hide_main_content('gym')" class="w3-bar-item w3-button">Gymwear</a>
-    <a href="#" onclick="show_hide_main_content('wat')" class="w3-bar-item w3-button">Watches</a>
-    <a href="#" onclick="show_hide_main_content('sun')" class="w3-bar-item w3-button">Sunglasses</a>
+    <a onclick="show_hide_main_content('shirts')" href="#" class="w3-bar-item w3-button">Shirts</a>
+    <a onclick="show_hide_main_content('jenas')" href="#" class="w3-bar-item w3-button">Jeans</a>
+    <a onclick="show_hide_main_content('jacket')" href="#" class="w3-bar-item w3-button">Jackets</a>
+    <a onclick="show_hide_main_content('gym')" href="#" class="w3-bar-item w3-button">Gymwear</a>
+    <a onclick="show_hide_main_content('jenas')" href="#" class="w3-bar-item w3-button">Blazers</a>
+    <a onclick="show_hide_main_content('wat')" href="#" class="w3-bar-item w3-button">Watch</a>
   </div>
 
 </nav>
@@ -348,6 +348,33 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </div>
   </div>
 </div>
+
+<script>
+// Accordion
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 <script>
 function show_hide_main_content(id) {
