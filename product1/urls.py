@@ -6,13 +6,8 @@ import django
 from django.views.static import serve
 
 urlpatterns = [
-    # Examples:
-    # url(r'^$', 'product1.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/home/$', shirts),
-    url(r'^pics/(?P<path>.*)$',django.views.static.serve,{'document_root': settings.BASE_DIR+'/static/pics'}),
-    # url(r'^pics/(?P<path>.*)$', django.views.static.serve,{'document_root': '/home/ganesh/rikoouu/product1/static/pics'}),
+    url(r'^pics/(?P<path>.*)$',django.views.static.serve,{'document_root': settings.BASE_DIR+'/pics'}),
 ]
-# /home/ganesh/rikoouu/product1/static/pics/Firefox_wallpaper.png
