@@ -5,5 +5,5 @@ def shirts(request):
         objs=Shirts.objects.all()
         context = {"objs": objs}
         return render(request, 'shirts.html', context)
-    except :
-        pass
+    except (Exception,)as e :
+        print (e)
