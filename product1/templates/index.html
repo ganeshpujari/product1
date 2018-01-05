@@ -24,7 +24,6 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <a onclick="show_hide_main_content('jenas')" href="#" class="w3-bar-item w3-button">Jeans</a>
     <a onclick="show_hide_main_content('jacket')" href="#" class="w3-bar-item w3-button">Jackets</a>
     <a onclick="show_hide_main_content('gym')" href="#" class="w3-bar-item w3-button">Gymwear</a>
-    <a onclick="show_hide_main_content('jenas')" href="#" class="w3-bar-item w3-button">Blazers</a>
     <a onclick="show_hide_main_content('wat')" href="#" class="w3-bar-item w3-button">Watch</a>
     <a onclick="show_hide_main_content('sun')" href="#" class="w3-bar-item w3-button">Sunglasses</a>
   </div>
@@ -39,8 +38,90 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<section  id="home" >
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
 
-<section  id="jenas">
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+
+  </div>
+
+  <!-- Product grid -->
+
+  <div class="w3-row w3-grayscale">
+        <div class="w3-col l3 s6" onclick="show_hide_main_content('shirts')">
+              <div class="w3-container">
+                <img src="https://gloimg.twkcdn.com/td/pdm-product-pic/Clothing/2016/07/18/source-img/20160718114639_13861.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">SHIRTS<br></p>
+              </div>
+        </div>
+
+        <div class="w3-col l3 s6" onclick="show_hide_main_content('jenas')">
+              <div class="w3-container">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71H8dgxEX2L._UX385_.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">JEANS<br></p>
+              </div>
+        </div>
+
+      <div class="w3-col l3 s6" onclick="show_hide_main_content('jacket')">
+              <div class="w3-container" >
+                <img src="https://www.lordsindia.com/image/cache/1/NEHRU%20JACKET/NEHRU-MODI%20JACKET-6-500x500.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">JACKETS<br></p>
+              </div>
+        </div>
+
+      <div class="w3-col l3 s6" onclick="show_hide_main_content('gym')">
+              <div class="w3-container">
+                <img src="https://4.imimg.com/data4/FL/UU/MY-9482543/ladies-night-pant-500x500.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">GYMWEAR<br></p>
+              </div>
+        </div>
+
+
+
+      <div class="w3-col l3 s6" onclick="show_hide_main_content('wat')">
+              <div class="w3-container" >
+                <img src="https://cdn.shopclues.com/images/thumbnails/67327/320/320/In311491226885.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">WATCHES<br></p>
+              </div>
+        </div>
+
+      <div class="w3-col l3 s6" onclick="show_hide_main_content('sun')">
+              <div class="w3-container">
+                <img src="https://i1.wp.com/roncolife.com/wp-content/uploads/2016/07/Costa-Del-Mar-Jose-580P-Men-Sunglasess-Matte-Gray-Silver-Mirror-JO98OSCP-0-2.jpg?fit=500%2C409" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">SUNGLASSES<br></p>
+              </div>
+        </div>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</section>
+<section  id="jenas"  style=" display: none;">
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:250px">
 
@@ -62,7 +143,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 
   <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
+    <p>{{ jeans.count }} items</p>
   </div>
 
   <!-- Product grid -->
@@ -105,13 +186,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Image header -->
   <div class="w3-display-container w3-container">
-    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
     </div>
   </div>
 
   <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
+    <p>{{ shirts.count }} items</p>
   </div>
 
   <!-- Product grid -->
@@ -160,7 +240,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 
   <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
+    <p>{{ jackets.count }} items</p>
   </div>
 
   <!-- Product grid -->
@@ -209,7 +289,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 
   <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
+    <p>{{ gymwear.count }} Items</p>
   </div>
 
   <!-- Product grid -->
@@ -258,7 +338,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 
   <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
+    <p>{{ watches.count }}items</p>
   </div>
 
   <!-- Product grid -->
@@ -307,7 +387,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 
   <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
+    <p>{{ sunglasses.count }} items</p>
   </div>
 
   <!-- Product grid -->
@@ -385,6 +465,7 @@ function show_hide_main_content(id) {
     document.getElementById('gym').style.display='none';
     document.getElementById('wat').style.display='none';
     document.getElementById('sun').style.display='none';
+    document.getElementById('home').style.display='none';
     document.getElementById(id).style.display='block';
     w3_close()
 
