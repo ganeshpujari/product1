@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<title>D & G BBRANDS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide" style="color:'red';"><b style="font-weight: bolder;font-style: italic">D&G BRANDS</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="/api/shirts/" class="w3-bar-item w3-button">Shirts</a>
+    <a href="/api/jeans/" class="w3-bar-item w3-button">Jeans</a>
+    <a href="/api/jackets/" class="w3-bar-item w3-button">Jackets</a>
+    <a href="/api/gymwear/" class="w3-bar-item w3-button">Gymwear</a>
+    <a href="/api/watches/" class="w3-bar-item w3-button">Watch</a>
+    <a href="/api/sunglasses/" class="w3-bar-item w3-button">Sunglasses</a>
+  </div>
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<section  id="home" >
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+
+  </div>
+
+  <!-- Product grid -->
+
+  <div class="w3-row w3-grayscale">
+      <a href="/api/shirts/">
+        <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="https://gloimg.twkcdn.com/td/pdm-product-pic/Clothing/2016/07/18/source-img/20160718114639_13861.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">SHIRTS<br></p>
+              </div>
+        </div></a>
+        <a href="/api/jeans/">
+        <div class="w3-col l3 s6" >
+              <div class="w3-container">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71H8dgxEX2L._UX385_.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">JEANS<br></p>
+              </div>
+        </div></a>
+
+      <a href="/api/jeckets/">
+      <div class="w3-col l3 s6" >
+              <div class="w3-container" >
+                <img src="https://www.lordsindia.com/image/cache/1/NEHRU%20JACKET/NEHRU-MODI%20JACKET-6-500x500.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">JACKETS<br></p>
+              </div>
+        </div>
+
+          <a href="/api/gymwear/">
+      <div class="w3-col l3 s6" >
+              <div class="w3-container">
+                <img src="https://4.imimg.com/data4/FL/UU/MY-9482543/ladies-night-pant-500x500.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">GYMWEAR<br></p>
+              </div>
+        </div>
+          </a>
+
+
+        <a href="/api/warches/">
+      <div class="w3-col l3 s6" >
+              <div class="w3-container" >
+                <img src="https://cdn.shopclues.com/images/thumbnails/67327/320/320/In311491226885.jpg" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">WATCHES<br></p>
+              </div>
+        </div></a>
+
+          <a href="/api/sunglasses/">
+      <div class="w3-col l3 s6" onclick="show_hide_main_content('sun')">
+              <div class="w3-container">
+                <img src="https://i1.wp.com/roncolife.com/wp-content/uploads/2016/07/Costa-Del-Mar-Jose-580P-Men-Sunglasess-Matte-Gray-Silver-Mirror-JO98OSCP-0-2.jpg?fit=500%2C409" style="width:100%">
+                <p style="text-align: center;font-weight: bolder;color: red">SUNGLASSES<br></p>
+              </div>
+        </div>
+          </a>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by D & G BRANDS </div>
+
+  <!-- End page content -->
+</section>
+<section  id="jenas"  style=" display: none;">
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Jeans</p>
+    <p class="w3-right">
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>{{ jeans.count }} items</p>
+  </div>
+
+  <!-- Product grid -->
+
+  <div class="w3-row w3-grayscale">
+      {% for obj in jeans %}
+        <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="/{{ obj.pic.name}}" style="width:100%">
+                <p>{{ obj.name }}<br><b>{{ obj.price }}</b></p>
+              </div>
+        </div>
+      {% endfor %}
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</section>
+<section id ="shirts" style=" display: none;" >
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Shirts</p>
+    <p class="w3-right">
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>{{ shirts.count }} items</p>
+  </div>
+
+  <!-- Product grid -->
+
+  <div class="w3-row w3-grayscale">
+      {% for obj in shirts %}
+        <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="/{{ obj.pic.name}}" style="width:100%">
+                <p>{{ obj.name }}<br><b>{{ obj.price }}</b></p>
+              </div>
+        </div>
+      {% endfor %}
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</section>
+<section id ="jacket" style=" display: none;" >
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Jacket</p>
+    <p class="w3-right">
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>{{ jackets.count }} items</p>
+  </div>
+
+  <!-- Product grid -->
+
+  <div class="w3-row w3-grayscale">
+      {% for obj in jackets %}
+        <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="/{{ obj.pic.name}}" style="width:100%">
+                <p>{{ obj.name }}<br><b>{{ obj.price }}</b></p>
+              </div>
+        </div>
+      {% endfor %}
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</section>
+<section id ="gym" style=" display: none;">
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Gymwear</p>
+    <p class="w3-right">
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>{{ gymwear.count }} Items</p>
+  </div>
+
+  <!-- Product grid -->
+
+  <div class="w3-row w3-grayscale">
+      {% for obj in gymwear %}
+        <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="/{{ obj.pic.name}}" style="width:100%">
+                <p>{{ obj.name }}<br><b>{{ obj.price }}</b></p>
+              </div>
+        </div>
+      {% endfor %}
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</section>
+<section id ="wat" style=" display: none;">
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Watches</p>
+    <p class="w3-right">
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>{{ watches.count }}items</p>
+  </div>
+
+  <!-- Product grid -->
+
+  <div class="w3-row w3-grayscale">
+      {% for obj in watches %}
+        <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="/{{ obj.pic.name}}" style="width:100%">
+                <p>{{ obj.name }}<br><b>{{ obj.price }}</b></p>
+              </div>
+        </div>
+      {% endfor %}
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</section>
+<section id ="sun" style=" display: none;" >
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Sunglasses</p>
+    <p class="w3-right">
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>{{ sunglasses.count }} items</p>
+  </div>
+
+  <!-- Product grid -->
+
+  <div class="w3-row w3-grayscale">
+      {% for obj in sunglasses %}
+        <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="/{{ obj.pic.name}}" style="width:100%">
+                <p>{{ obj.name }}<br><b>{{ obj.price }}</b></p>
+              </div>
+        </div>
+      {% endfor %}
+
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</section>
+
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+<script>
+function show_hide_main_content(id) {
+    document.getElementById('jenas').style.display='none';
+    document.getElementById('shirts').style.display='none';
+    document.getElementById('jacket').style.display='none';
+    document.getElementById('gym').style.display='none';
+    document.getElementById('wat').style.display='none';
+    document.getElementById('sun').style.display='none';
+    document.getElementById('home').style.display='none';
+    document.getElementById(id).style.display='block';
+    w3_close()
+
+}
+
+</script>
+
+
+</body>
+</html>
